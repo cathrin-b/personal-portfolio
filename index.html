@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cathrin Prasalya | Data Analyst</title>
+    <meta name="description" content="Cathrin Prasalya — Data Analyst. Python, SQL, Power BI, Tableau specialist.">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+
+    <!-- CURSOR -->
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- NOISE OVERLAY -->
+    <div class="noise"></div>
+
+    <!-- SIDE NAV -->
+    <aside id="sidebar">
+        <div class="sidebar-logo">
+            <span class="logo-c">C</span><span class="logo-p">P</span>
+        </div>
+
+        <nav class="sidebar-nav">
+            <button class="nav-btn active" data-view="home">
+                <span class="nav-icon"><i class="fas fa-house"></i></span>
+                <span class="nav-label">Home</span>
+                <span class="nav-line"></span>
+            </button>
+            <button class="nav-btn" data-view="about">
+                <span class="nav-icon"><i class="fas fa-user"></i></span>
+                <span class="nav-label">About</span>
+                <span class="nav-line"></span>
+            </button>
+            <button class="nav-btn" data-view="resume">
+                <span class="nav-icon"><i class="fas fa-file-lines"></i></span>
+                <span class="nav-label">Resume</span>
+                <span class="nav-line"></span>
+            </button>
+            <button class="nav-btn" data-view="skills">
+                <span class="nav-icon"><i class="fas fa-code"></i></span>
+                <span class="nav-label">Skills</span>
+                <span class="nav-line"></span>
+            </button>
+            <button class="nav-btn" data-view="projects">
+                <span class="nav-icon"><i class="fas fa-layer-group"></i></span>
+                <span class="nav-label">Projects</span>
+                <span class="nav-line"></span>
+            </button>
+            <button class="nav-btn" data-view="contact">
+                <span class="nav-icon"><i class="fas fa-paper-plane"></i></span>
+                <span class="nav-label">Contact</span>
+                <span class="nav-line"></span>
+            </button>
+        </nav>
+
+        <div class="sidebar-socials">
+            <a href="https://github.com/cathrin-b" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/cathrin-prasalya-a796162ba" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com/carhylunex" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:cathrinprasalsrcwya@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+    </aside>
+
+    <!-- MOBILE TOP BAR -->
+    <header id="topbar">
+        <div class="topbar-logo">CP<span>.</span></div>
+        <button id="mob-toggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <!-- MOBILE DRAWER -->
+    <div id="mob-drawer">
+        <button class="mob-nav-btn" data-view="home"><i class="fas fa-house"></i> Home</button>
+        <button class="mob-nav-btn" data-view="about"><i class="fas fa-user"></i> About</button>
+        <button class="mob-nav-btn" data-view="resume"><i class="fas fa-file-lines"></i> Resume</button>
+        <button class="mob-nav-btn" data-view="skills"><i class="fas fa-code"></i> Skills</button>
+        <button class="mob-nav-btn" data-view="projects"><i class="fas fa-layer-group"></i> Projects</button>
+        <button class="mob-nav-btn" data-view="contact"><i class="fas fa-paper-plane"></i> Contact</button>
+    </div>
+
+    <!-- PAGE TRANSITION OVERLAY -->
+    <div id="page-transition"></div>
+
+    <!-- MAIN VIEWS CONTAINER -->
+    <main id="views">
+
+        <!-- ══════ HOME ══════ -->
+        <section id="view-home" class="view active">
+            <div class="home-bg-text">DATA</div>
+            <div class="home-content">
+                <div class="home-left">
+                    <div class="home-tag">
+                        <span class="tag-dot"></span> Open to Work
+                    </div>
+                    <h1 class="home-name">
+                        <span class="line-wrap"><span class="line-text">Cathrin</span></span>
+                        <span class="line-wrap"><span class="line-text delay-1">Prasalya</span></span>
+                    </h1>
+                    <div class="home-role-wrap">
+                        <span class="role-bar"></span>
+                        <div class="home-role">
+                            <span id="type-text"></span><span class="type-cur">_</span>
+                        </div>
+                    </div>
+                    <p class="home-bio">
+                        Turning complex datasets into powerful stories. I specialize in Python, SQL & BI tools to drive data-led decisions.
+                    </p>
+                    <div class="home-btns">
+                        <button class="btn-red" data-view="projects">
+                            <i class="fas fa-rocket"></i> My Work
+                        </button>
+                        <button class="btn-ghost" data-view="contact">
+                            <i class="fas fa-paper-plane"></i> Contact
+                        </button>
+                    </div>
+                    <div class="home-socials">
+                        <a href="https://github.com/cathrin-b" target="_blank" class="hsoc-btn hsoc-github" title="GitHub">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://instagram.com/carhylunex" target="_blank" class="hsoc-btn hsoc-insta" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/cathrin-prasalya-a796162ba" target="_blank" class="hsoc-btn hsoc-linkedin" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="home-right">
+                    <div class="home-card-3d">
+                        <div class="card-inner">
+                            <div class="card-rings">
+                                <div class="c-ring r1"></div>
+                                <div class="c-ring r2"></div>
+                                <div class="c-ring r3"></div>
+                            </div>
+                            <div class="card-center">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="orbit-dot od1"></div>
+                            <div class="orbit-dot od2"></div>
+                            <div class="orbit-dot od3"></div>
+                        </div>
+                        <div class="floating-tags">
+                            <div class="ftag f1">Python</div>
+                            <div class="ftag f2">SQL</div>
+                            <div class="ftag f3">Power BI</div>
+                            <div class="ftag f4">Tableau</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-stats-bar">
+                <div class="hstat">
+                    <span class="hstat-num" data-target="2">0</span><span class="hstat-plus">+</span>
+                    <span class="hstat-lbl">Internships</span>
+                </div>
+                <div class="hstat-sep"></div>
+                <div class="hstat">
+                    <span class="hstat-num" data-target="6">0</span><span class="hstat-plus">+</span>
+                    <span class="hstat-lbl">Projects</span>
+                </div>
+                <div class="hstat-sep"></div>
+                <div class="hstat">
+                    <span class="hstat-num" data-target="5">0</span><span class="hstat-plus">+</span>
+                    <span class="hstat-lbl">Tools</span>
+                </div>
+                <div class="hstat-sep"></div>
+                <div class="hstat">
+                    <span class="hstat-num" data-target="91">0</span><span class="hstat-plus">%</span>
+                    <span class="hstat-lbl">HSC Score</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════ ABOUT ══════ -->
+        <section id="view-about" class="view">
+            <div class="view-header">
+                <span class="view-tag">01 / About Me</span>
+                <h2 class="view-title">Who <span>Am I?</span></h2>
+            </div>
+            <div class="about-layout">
+                <div class="about-avatar-col">
+                    <div class="avatar-frame">
+                        <div class="avatar-inner">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="avatar-ring-spin"></div>
+                        <div class="avatar-corner ac1"></div>
+                        <div class="avatar-corner ac2"></div>
+                        <div class="avatar-corner ac3"></div>
+                        <div class="avatar-corner ac4"></div>
+                    </div>
+                    <div class="quick-facts">
+                        <div class="qf-row"><i class="fas fa-map-marker-alt"></i> Coimbatore, India</div>
+                        <div class="qf-row"><i class="fas fa-graduation-cap"></i> B.Com (CA) · Final Year</div>
+                        <div class="qf-row"><i class="fas fa-circle-check" style="color:#22c55e"></i> Open to Work</div>
+                        <div class="qf-row"><i class="fas fa-language"></i> Tamil, English</div>
+                    </div>
+                </div>
+                <div class="about-content-col">
+                    <div class="about-block">
+                        <p>I am a passionate and detail-oriented <mark>Data Analyst</mark> with a strong foundation in Python, SQL, and data visualization tools like Power BI and Tableau. I enjoy transforming raw data into meaningful insights that support better decision-making.</p>
+                        <p>As a final-year <mark>B.Com (Computer Applications)</mark> student at Sri Ramakrishna College of Arts and Science for Women, I continuously explore new technologies and analytical techniques to stay ahead in the ever-evolving data landscape.</p>
+                    </div>
+                    <div class="interests-section">
+                        <h3 class="sub-title">Interests <span>&amp;</span> Hobbies</h3>
+                        <div class="interests-wrap">
+                            <div class="int-chip"><i class="fas fa-camera"></i> Photography</div>
+                            <div class="int-chip"><i class="fas fa-brain"></i> Quiz Solving</div>
+                            <div class="int-chip"><i class="fas fa-film"></i> Movies</div>
+                            <div class="int-chip"><i class="fas fa-chart-line"></i> Data Viz</div>
+                            <div class="int-chip"><i class="fas fa-lightbulb"></i> Learning</div>
+                            <div class="int-chip"><i class="fas fa-mobile-alt"></i> Tech Apps</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════ RESUME ══════ -->
+        <section id="view-resume" class="view">
+            <div class="view-header">
+                <span class="view-tag">02 / Resume</span>
+                <h2 class="view-title">My <span>Journey</span></h2>
+            </div>
+            <div class="resume-layout">
+                <!-- Experience -->
+                <div class="resume-col">
+                    <div class="res-col-title">
+                        <i class="fas fa-briefcase"></i> Experience
+                    </div>
+                    <div class="res-timeline">
+                        <div class="res-item">
+                            <div class="res-dot"></div>
+                            <div class="res-card">
+                                <span class="res-date">Dec 2024 – Jan 2025</span>
+                                <h3>Data Analyst Intern</h3>
+                                <h4>Unified Mentor</h4>
+                                <ul>
+                                    <li>Worked on real-world data analytics projects</li>
+                                    <li>Google Play Store <strong>Apps Analysis</strong></li>
+                                    <li>Built a <strong>Coffee Sales Dashboard</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="res-item">
+                            <div class="res-dot"></div>
+                            <div class="res-card">
+                                <span class="res-date">May 2025 · 15 Days</span>
+                                <h3>Digital Marketing Intern</h3>
+                                <h4>Accent Techno Soft</h4>
+                                <ul>
+                                    <li>Core digital marketing tools &amp; strategies</li>
+                                    <li>Online campaigns and tracking metrics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Education -->
+                <div class="resume-col">
+                    <div class="res-col-title">
+                        <i class="fas fa-graduation-cap"></i> Education
+                    </div>
+                    <div class="res-timeline">
+                        <div class="res-item">
+                            <div class="res-dot res-dot-alt"></div>
+                            <div class="res-card">
+                                <span class="res-date res-date-alt">June 2023 – May 2026</span>
+                                <h3>B.Com Computer Applications</h3>
+                                <h4>Sri Ramakrishna College, Coimbatore</h4>
+                                <p class="res-score"><i class="fas fa-star"></i> CGPA: 7.2</p>
+                            </div>
+                        </div>
+                        <div class="res-item">
+                            <div class="res-dot res-dot-alt"></div>
+                            <div class="res-card">
+                                <span class="res-date res-date-alt">2022 – 2023</span>
+                                <h3>Higher Secondary (HSC)</h3>
+                                <h4>Nirmala Girls HSS, Ariyalur</h4>
+                                <p class="res-score"><i class="fas fa-star"></i> 91%</p>
+                            </div>
+                        </div>
+                        <div class="res-item">
+                            <div class="res-dot res-dot-alt"></div>
+                            <div class="res-card">
+                                <span class="res-date res-date-alt">2020 – 2021</span>
+                                <h3>SSLC (10th Grade)</h3>
+                                <h4>Chinna Rani High School, Thanjavur</h4>
+                                <p class="res-score"><i class="fas fa-star"></i> 89%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════ SKILLS ══════ -->
+        <section id="view-skills" class="view">
+            <div class="view-header">
+                <span class="view-tag">03 / Skills</span>
+                <h2 class="view-title">Technical <span>Arsenal</span></h2>
+            </div>
+            <div class="skills-layout">
+                <div class="skills-col">
+                    <div class="skills-col-label"><i class="fas fa-database"></i> Data &amp; Analytics</div>
+                    <div class="sk-bars">
+                        <div class="sk-row">
+                            <div class="sk-top"><span><i class="fab fa-python"></i> Python</span><span class="sk-pct">85%</span></div>
+                            <div class="sk-track"><div class="sk-fill" data-w="85"></div></div>
+                        </div>
+                        <div class="sk-row">
+                            <div class="sk-top"><span><i class="fas fa-server"></i> SQL</span><span class="sk-pct">80%</span></div>
+                            <div class="sk-track"><div class="sk-fill" data-w="80"></div></div>
+                        </div>
+                        <div class="sk-row">
+                            <div class="sk-top"><span><i class="fas fa-chart-pie"></i> Power BI</span><span class="sk-pct">85%</span></div>
+                            <div class="sk-track"><div class="sk-fill" data-w="85"></div></div>
+                        </div>
+                        <div class="sk-row">
+                            <div class="sk-top"><span><i class="fas fa-chart-bar"></i> Tableau</span><span class="sk-pct">75%</span></div>
+                            <div class="sk-track"><div class="sk-fill" data-w="75"></div></div>
+                        </div>
+                        <div class="sk-row">
+                            <div class="sk-top"><span><i class="fas fa-file-excel"></i> MS Excel</span><span class="sk-pct">90%</span></div>
+                            <div class="sk-track"><div class="sk-fill" data-w="90"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-col">
+                    <div class="skills-col-label"><i class="fas fa-users"></i> Professional</div>
+                    <div class="sk-bars">
+                        <div class="sk-row">
+                            <div class="sk-top"><span><i class="fas fa-search"></i> Analytical Thinking</span><span class="sk-pct">90%</span></div>
+                            <div class="sk-track"><div class="sk-fill sk-fill-alt" data-w="90"></div></div>
+                        </div>
+                        <div class="sk-row">
+                            <div class="sk-top"><span><i class="fas fa-puzzle-piece"></i> Problem Solving</span><span class="sk-pct">88%</span></div>
+                            <div class="sk-track"><div class="sk-fill sk-fill-alt" data-w="88"></div></div>
+                        </div>
+                        <div class="sk-row">
+                            <div class="sk-top"><span><i class="fas fa-comments"></i> Communication</span><span class="sk-pct">85%</span></div>
+                            <div class="sk-track"><div class="sk-fill sk-fill-alt" data-w="85"></div></div>
+                        </div>
+                        <div class="sk-row">
+                            <div class="sk-top"><span><i class="fas fa-bullseye"></i> Attention to Detail</span><span class="sk-pct">92%</span></div>
+                            <div class="sk-track"><div class="sk-fill sk-fill-alt" data-w="92"></div></div>
+                        </div>
+                        <div class="sk-row">
+                            <div class="sk-top"><span><i class="fas fa-clock"></i> Time Management</span><span class="sk-pct">87%</span></div>
+                            <div class="sk-track"><div class="sk-fill sk-fill-alt" data-w="87"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tools-row">
+                <span class="tool-badge"><i class="fab fa-python"></i>Python</span>
+                <span class="tool-badge"><i class="fas fa-database"></i>MySQL</span>
+                <span class="tool-badge"><i class="fas fa-chart-pie"></i>Power BI</span>
+                <span class="tool-badge"><i class="fas fa-chart-bar"></i>Tableau</span>
+                <span class="tool-badge"><i class="fas fa-file-excel"></i>Excel</span>
+                <span class="tool-badge"><i class="fas fa-flask"></i>Pandas</span>
+                <span class="tool-badge"><i class="fas fa-robot"></i>Scikit-learn</span>
+                <span class="tool-badge"><i class="fab fa-html5"></i>HTML/CSS</span>
+                <span class="tool-badge"><i class="fab fa-js"></i>JavaScript</span>
+            </div>
+        </section>
+
+        <!-- ══════ PROJECTS ══════ -->
+        <section id="view-projects" class="view">
+            <div class="view-header">
+                <span class="view-tag">04 / Projects</span>
+                <h2 class="view-title">Featured <span>Work</span></h2>
+            </div>
+            <div class="proj-grid">
+                <div class="proj-card" data-num="01">
+                    <div class="proj-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&q=80" alt="Play Store Analysis">
+                        <div class="proj-overlay">
+                            <i class="fab fa-google-play"></i>
+                        </div>
+                    </div>
+                    <div class="proj-info">
+                        <h3>Google Play Store Analysis</h3>
+                        <p>Analyzed app trends, ratings &amp; installs using advanced analytics to identify market opportunities.</p>
+                        <div class="proj-chips"><span>Python</span><span>Pandas</span><span>Visualization</span></div>
+                    </div>
+                </div>
+                <div class="proj-card" data-num="02">
+                    <div class="proj-img">
+                        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=500&q=80" alt="Coffee Sales">
+                        <div class="proj-overlay">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                    </div>
+                    <div class="proj-info">
+                        <h3>Coffee Sales Dashboard</h3>
+                        <p>Built an interactive dashboard to analyze sales, profit margins and top-performing products.</p>
+                        <div class="proj-chips"><span>Python</span><span>Excel</span><span>Dashboard</span></div>
+                    </div>
+                </div>
+                <div class="proj-card" data-num="03">
+                    <div class="proj-img">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=500&q=80" alt="Sales Forecast">
+                        <div class="proj-overlay">
+                            <i class="fas fa-store"></i>
+                        </div>
+                    </div>
+                    <div class="proj-info">
+                        <h3>Sales Forecasting Model</h3>
+                        <p>Predicted supermarket sales using ML models to optimize inventory management.</p>
+                        <div class="proj-chips"><span>Python</span><span>ML</span><span>XGBoost</span></div>
+                    </div>
+                </div>
+                <div class="proj-card" data-num="04">
+                    <div class="proj-img">
+                        <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437b5?w=500&q=80" alt="Banking">
+                        <div class="proj-overlay">
+                            <i class="fas fa-university"></i>
+                        </div>
+                    </div>
+                    <div class="proj-info">
+                        <h3>Mobile Banking Analysis</h3>
+                        <p>Analyzed customer behavior, transaction volumes and digital banking usage patterns.</p>
+                        <div class="proj-chips"><span>Data Analysis</span><span>Finance</span></div>
+                    </div>
+                </div>
+                <div class="proj-card" data-num="05">
+                    <div class="proj-img">
+                        <img src="https://images.unsplash.com/photo-1558231336-1e6ef1d167f2?w=500&q=80" alt="Traffic">
+                        <div class="proj-overlay">
+                            <i class="fas fa-traffic-light"></i>
+                        </div>
+                    </div>
+                    <div class="proj-info">
+                        <h3>Traffic Analysis System</h3>
+                        <p>Python-based system to monitor and analyze local traffic patterns &amp; congestion stats.</p>
+                        <div class="proj-chips"><span>Python</span><span>Analytics</span></div>
+                    </div>
+                </div>
+                <div class="proj-card" data-num="06">
+                    <div class="proj-img">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=500&q=80" alt="Portfolio">
+                        <div class="proj-overlay">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                    </div>
+                    <div class="proj-info">
+                        <h3>Portfolio Website</h3>
+                        <p>Designed a responsive, dark-themed SPA to showcase skills and projects professionally.</p>
+                        <div class="proj-chips"><span>HTML5</span><span>CSS3</span><span>JS</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════ CONTACT ══════ -->
+        <section id="view-contact" class="view">
+            <div class="view-header">
+                <span class="view-tag">05 / Contact</span>
+                <h2 class="view-title">Get In <span>Touch</span></h2>
+            </div>
+            <p class="contact-tagline">Have a project or opportunity? I'd love to hear from you!</p>
+            <div class="contact-layout">
+                <div class="contact-left">
+                    <a href="tel:+917904932147" class="ccard">
+                        <div class="ccard-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="ccard-body">
+                            <span class="ccard-label">Phone</span>
+                            <span class="ccard-val">+91 7904 932 147</span>
+                        </div>
+                        <i class="fas fa-arrow-right ccard-arrow"></i>
+                    </a>
+                    <a href="mailto:cathrinprasalsrcwya@gmail.com" class="ccard">
+                        <div class="ccard-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="ccard-body">
+                            <span class="ccard-label">Email</span>
+                            <span class="ccard-val">cathrinprasalsrcwya@gmail.com</span>
+                        </div>
+                        <i class="fas fa-arrow-right ccard-arrow"></i>
+                    </a>
+                    <a href="https://instagram.com/carhylunex" target="_blank" class="ccard">
+                        <div class="ccard-icon"><i class="fab fa-instagram"></i></div>
+                        <div class="ccard-body">
+                            <span class="ccard-label">Instagram</span>
+                            <span class="ccard-val">@carhylunex</span>
+                        </div>
+                        <i class="fas fa-arrow-right ccard-arrow"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/cathrin-prasalya-a796162ba" target="_blank" class="ccard">
+                        <div class="ccard-icon" style="color:#0a66c2; border-color:#0a66c2;"><i class="fab fa-linkedin-in"></i></div>
+                        <div class="ccard-body">
+                            <span class="ccard-label">LinkedIn</span>
+                            <span class="ccard-val">View My Profile</span>
+                        </div>
+                        <i class="fas fa-arrow-right ccard-arrow"></i>
+                    </a>
+                    <a href="https://github.com/cathrin-b" target="_blank" class="ccard">
+                        <div class="ccard-icon" style="color:#ffffff; border-color:rgba(255,255,255,0.3); background:rgba(255,255,255,0.06);"><i class="fab fa-github"></i></div>
+                        <div class="ccard-body">
+                            <span class="ccard-label">GitHub</span>
+                            <span class="ccard-val">@cathrin-b · View Repositories</span>
+                        </div>
+                        <i class="fas fa-arrow-right ccard-arrow"></i>
+                    </a>
+                </div>
+                <div class="contact-right">
+                    <div class="contact-box">
+                        <div class="cbox-header">
+                            <i class="fas fa-paper-plane"></i> Send a Message
+                        </div>
+                        <input type="text" placeholder="Your Name" class="c-input">
+                        <input type="email" placeholder="Your Email" class="c-input">
+                        <textarea placeholder="Your Message..." class="c-textarea" rows="4"></textarea>
+                        <button class="btn-red c-send"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PAGE INDICATOR -->
+    <div id="page-indicator">
+        <div class="pi-dot active" data-view="home"></div>
+        <div class="pi-dot" data-view="about"></div>
+        <div class="pi-dot" data-view="resume"></div>
+        <div class="pi-dot" data-view="skills"></div>
+        <div class="pi-dot" data-view="projects"></div>
+        <div class="pi-dot" data-view="contact"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
